@@ -3,7 +3,6 @@
     package="com.po4yka.baseproject">
 
     <application
-        android:name="com.po4yka.baseproject.App"
         android:allowBackup="true"
         android:fullBackupContent="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.po4yka.baseproject.ui.MainActivity">
+        <activity android:name="com.po4yka.baseproject.view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

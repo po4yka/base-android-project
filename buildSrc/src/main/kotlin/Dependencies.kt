@@ -49,12 +49,6 @@ object Dependencies {
         const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
     }
 
-    object Koin {
-        const val core = "org.koin:koin-core:${Versions.koin}"
-        const val scope = "org.koin:koin-androidx-scope:${Versions.koin}"
-        const val viewModel = "org.koin:koin-androidx-viewmodel:${Versions.koin}"
-    }
-
     object Room {
         const val roomRuntime = "androidx.room:room-runtime:${Versions.room}"
         const val room = "androidx.room:room-ktx:${Versions.room}"
@@ -73,6 +67,5 @@ object Dependencies {
         const val JUnit4 = "junit:junit:${Versions.junit}"
         const val extJunit = "androidx.test.ext:junit:${Versions.extJunit}"
         const val espresso = "androidx.test.espresso:espresso-core:${Versions.espresso}"
-        const val koin = "org.koin:koin-test:${Versions.koin}"
     }
 }

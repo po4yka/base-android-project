@@ -1,4 +1,4 @@
-package com.po4yka.baseproject.ui
+package com.po4yka.baseproject.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

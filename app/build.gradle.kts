@@ -32,11 +32,6 @@ dependencies {
     implementation(Dependencies.Androidx.navFragment)
     implementation(Dependencies.Androidx.navUiKtx)
 
-    implementation(Dependencies.Koin.scope)
-    implementation(Dependencies.Koin.viewModel)
-
-    implementation(project(":data"))
-
     testImplementation(Dependencies.Test.JUnit4)
     androidTestImplementation(Dependencies.Test.extJunit)
     androidTestImplementation(Dependencies.Test.espresso)

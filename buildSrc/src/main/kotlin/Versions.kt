@@ -1,6 +1,6 @@
 object Versions {
     const val kt = "1.4.21"
-    const val buildGradle = "4.1.1"
+    const val buildGradle = "4.1.2"
 
     const val ktxCore = "1.3.2"
     const val appCompat = "1.2.0"
@@ -8,7 +8,6 @@ object Versions {
     const val navFragment = "2.3.2"
     const val navUiKtx = "2.3.2"
 
-    const val koin = "2.2.2"
     const val timber = "4.7.1"
     const val room = "2.2.6"
     const val serialize = "0.20.0"
