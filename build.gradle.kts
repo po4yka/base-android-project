@@ -5,12 +5,14 @@ buildscript {
         google()
         jcenter()
         maven("https://plugins.gradle.org/m2/")
+        maven("https://jitpack.io")
     }
 
     dependencies {
         classpath(Dependencies.Plugins.buildGradle)
         classpath(Dependencies.Plugins.buildKotlin)
         classpath(Dependencies.Plugins.ktlintClasspath)
+        classpath("com.android.tools.build:gradle:4.1.2")
     }
 }
 
@@ -33,7 +35,6 @@ configure<org.jlleitschuh.gradle.ktlint.KtlintExtension> {
     verbose.set(true)
     debug.set(true)
     outputToConsole.set(true)
-    outputColorName.set("RED")
     ignoreFailures.set(true)
 
     // Default "plain" reporter is actually harder to read.

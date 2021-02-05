@@ -4,10 +4,8 @@ object Dependencies {
         const val buildGradle = "com.android.tools.build:gradle:${Versions.buildGradle}"
         const val buildKotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kt}"
         const val application = "com.android.application"
-        const val library = "com.android.library"
         const val kotlinAndroid = "kotlin-android"
         const val kapt = "kotlin-kapt"
-        const val javaLib = "java-library"
         const val kotlin = "kotlin"
         const val ktlint = "org.jlleitschuh.gradle.ktlint"
         const val ktlintClasspath = "org.jlleitschuh.gradle:ktlint-gradle:${Versions.ktlint}"
@@ -34,14 +32,16 @@ object Dependencies {
         const val coreKtx = "androidx.core:core-ktx:${Versions.ktxCore}"
         const val appCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
         const val constraint = "androidx.constraintlayout:constraintlayout:${Versions.constraint}"
+
         const val navFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navFragment}"
         const val navUiKtx = "androidx.navigation:navigation-ui-ktx:${Versions.navUiKtx}"
+
+        const val lifecycle = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle}"
+        const val lifecycleViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
 
         const val roomRuntime = "androidx.room:room-runtime:${Versions.room}"
         const val roomCompiler = "androidx.room:room-compiler:${Versions.room}"
         const val roomKt = "androidx.room:room-ktx:${Versions.room}"
-
-        const val prefs = "androidx.preference:preference-ktx:${Versions.prefs}"
     }
 
     object Common {
@@ -63,9 +63,15 @@ object Dependencies {
             "com.squareup.okhttp3:logging-interceptor:${Versions.loggingInterceptor}"
     }
 
+    object Google {
+        const val material = "com.google.android.material:material:${Versions.material}"
+    }
+
     object Test {
         const val JUnit4 = "junit:junit:${Versions.junit}"
         const val extJunit = "androidx.test.ext:junit:${Versions.extJunit}"
         const val espresso = "androidx.test.espresso:espresso-core:${Versions.espresso}"
+        const val archCore = "androidx.arch.core:core-testing:${Versions.archCore}"
+        const val robolectric = "org.robolectric:robolectric:${Versions.robolectric}"
     }
 }
