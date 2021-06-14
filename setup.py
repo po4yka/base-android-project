@@ -30,7 +30,7 @@ def main():
     rootdir = "./"
     copyright_dir = "./.spotless/copyright.kt"
 
-    package_default = "domen.default.change"
+    package_default = "domen.initial.change"
     package_pattern = "^(\w+)\.(\w+)\.(\w+)$"
     package_change = None
     package_match_obj = re.search(package_pattern, package_default)
