@@ -48,11 +48,6 @@ android {
         consumerProguardFile("consumer-rules.pro")
     }
 
-    buildFeatures.apply {
-        dataBinding.isEnabled = AndroidConfig.DATA_BINDING_ENABLED
-        viewBinding = AndroidConfig.VIEW_BINDING_ENABLED
-    }
-
     buildTypes {
         getByName(BuildType.RELEASE) {
             proguardFiles("proguard-android-optimize.txt", "proguard-rules.pro")
@@ -65,6 +60,9 @@ android {
             isTestCoverageEnabled = BuildTypeDebug.isTestCoverageEnabled
         }
     }
+
+//    buildFeatures.dataBinding = true
+    buildFeatures.viewBinding = true
 
     flavorDimensions(BuildProductDimensions.ENVIRONMENT)
     productFlavors {

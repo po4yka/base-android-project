@@ -18,25 +18,20 @@ plugins {
     `kotlin-dsl`
 }
 
-kotlinDslPluginOptions {
-    experimentalWarning.set(false)
-}
-
 repositories {
     google()
     gradlePluginPortal()
-    jcenter()
     mavenCentral()
 }
 
 object PluginVersions {
     const val AGP = "4.2.1"
-    const val KOTLIN = "1.5.10"
+    const val KOTLIN = "1.5.21"
     const val SPOTLESS = "3.26.1"
 }
 
 dependencies {
-    implementation("com.android.tools.build:gradle:${PluginVersions.AGP}")
+    implementation("com.android.tools.build:gradle:4.2.2")
     implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:${PluginVersions.KOTLIN}")
     implementation("com.diffplug.spotless:spotless-plugin-gradle:${PluginVersions.SPOTLESS}")
 }
