@@ -2,8 +2,8 @@
  * Configuration version of all build dependencies
  */
 object DependencyVersions {
-    const val APPCOMPAT = "1.3.0"
-    const val CONSTRAINT_LAYOUT = "2.0.4"
+    const val APPCOMPAT = "1.3.1"
+    const val CONSTRAINT_LAYOUT = "2.1.1"
     const val CORE_KTX = "1.6.0"
     const val KOTLIN = "1.5.21"
     const val KTLINT = "0.41.0"
